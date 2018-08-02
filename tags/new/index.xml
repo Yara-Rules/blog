@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New on YaraRules Project</title>
+    <link>http://yararules.com/tags/new/</link>
+    <description>Recent content in New on YaraRules Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-EN</language>
+    <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
+    <webMaster>yararules@gmail.com (YaraRules)</webMaster>
+    <copyright>(c) 2017 YaraRules Project.</copyright>
+    <lastBuildDate>Wed, 08 Mar 2017 09:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="http://yararules.com/tags/new/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Website Redesign</title>
+      <link>http://yararules.com/2017/03/08/website-redesign/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>http://yararules.com/2017/03/08/website-redesign/</guid>
+      <description>Hello Yara lovers!
+We have been very busy lately working on ways to improve the YaraRules project and the online YaraRules Analyzer.
+The first of the changes and improvements is the redesigned website that you are seeing right now. We have moved from WordPress to Hugo in an effort of simplifying the web and its management.
+But that is not the only thing we are working on. We are working also on the YaraRules Analyzer and the YaraRules ruleset and have planned some improvements that you will enjoy for sure.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Yara Endpoint  &middot; YaraRules Project</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Yara-Rules project web site" />
+
+
+
+<meta name="keywords" content="endpoint, anti-malware, anti-virus, ">
+
+
+
+
+<meta property="og:title" content="Yara Endpoint  &middot; YaraRules Project ">
+<meta property="og:site_name" content="YaraRules Project"/>
+<meta property="og:url" content="http://yararules.com/2018/03/23/yara-endpoint/" />
+<meta property="og:locale" content="en-EN">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-03-23T22:00:22&#43;01:00" />
+<meta property="og:article:modified_time" content="2018-03-23T22:00:22&#43;01:00" />
+
+
+
+  
+<meta property="og:article:tag" content="Go">
+  
+<meta property="og:article:tag" content="endpoint">
+  
+<meta property="og:article:tag" content="anti-malware">
+  
+<meta property="og:article:tag" content="anti-virus">
+  
+
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@yararules" />
+<meta name="twitter:creator" content="@yararules" />
+<meta name="twitter:title" content="Yara Endpoint" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://yararules.com/2018/03/23/yara-endpoint/" />
+<meta name="twitter:domain" content="http://yararules.com/">
+  
+
+
+
+
+
+<link rel="canonical" href="http://yararules.com/2018/03/23/yara-endpoint/" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+<link rel="manifest" href="/img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<meta name="generator" content="Hugo 0.46" />
+
+  
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://yararules.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://yararules.com/css/style.css">
+<link rel="stylesheet" href="http://yararules.com/css/highlight/default.css">
+
+  
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://yararules.com/">
+  YaraRules
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Yara Rules Repository
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://yararules.com/">Home</a>
+
+
+  
+<a href="http://yararules.com/project">Project</a>
+
+<a href="https://analysis.yararules.com">YaraRules Analyzer</a>
+
+<a href="https://github.com/Yara-Rules/rules">YaraRules Repository</a>
+
+<a href="http://yararules.com/post" title="Show list of blog posts">Blog</a>
+
+<a href="http://yararules.com/contribute">Contribute</a>
+
+<a href="http://yararules.com/contact">Contact</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:yararules@gmail.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/Yara-Rules/rules">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/yararules">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Yara Endpoint
+</h1>
+
+  <div class="metas">
+<time datetime="2018-03-23">23 Mar, 2018</time>
+
+
+  
+  &middot; Read in about 3 min
+  &middot; (599 Words)
+  <br>
+  
+<a class="label" href="http://yararules.com/tags/go">Go</a>
+
+<a class="label" href="http://yararules.com/tags/endpoint">endpoint</a>
+
+<a class="label" href="http://yararules.com/tags/anti-malware">anti-malware</a>
+
+<a class="label" href="http://yararules.com/tags/anti-virus">anti-virus</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<p>It&rsquo;s been long time without any updates here. Let&rsquo;s publish some news. Yara-Rules project is proud to anounce another interesting tool for the comunity, it is Yara-Endpoint. It is a tool that has been designed for helping incident handlers during their daily job.</p>
+
+<p>As you may guess Yara-Endpoint is a tool that runs Yara remotely on endpoints. Well, that is a basic summarize for the whole project so let&rsquo;s explain it a little bit.</p>
+
+<p>Yara-Endpoint is build using a classic client-server architecture. That means clients will be deployed on your assets and those clients are in charge of running Yara. On the other side, the server schedule tasks can be performed by the clients. You can manage yara rules and endpoints from server side and it allows you to see reports.</p>
+
+<p>Let&rsquo;s see some images so you get a clear idea of everything.</p>
+
+<p>
+<figure>
+    <a href="/img/yara-endpoint/dashboard.png">
+        <img src="/img/yara-endpoint/dashboard.png" width="240" height="120" />
+    </a>
+    
+    <figcaption>
+        <h4>Dashboard</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<figure>
+    <a href="/img/yara-endpoint/rule_details.png">
+        <img src="/img/yara-endpoint/rule_details.png" width="240" height="120" />
+    </a>
+    
+    <figcaption>
+        <h4>Rule description</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<figure>
+    <a href="/img/yara-endpoint/tasks.png">
+        <img src="/img/yara-endpoint/tasks.png" width="240" height="120" />
+    </a>
+    
+    <figcaption>
+        <h4>Task schedule</h4>
+        
+    </figcaption>
+    
+</figure>
+</p>
+
+<p>Let&rsquo;s go deep with Yara-Endpoint.</p>
+
+<h3 id="how-they-connect-together">How they connect together</h3>
+
+<p>The server exposes a TCP port to comunicate with clients. When running the clients you must set the server IP and port.</p>
+
+<h3 id="client-characteristics">Client characteristics</h3>
+
+<p>The client is a standalone binary. It is not necessary to be installed and it is self-registered during the first run. Moreover, the client creates a configuration file that stores its ID.</p>
+
+<p>The client performs Yara scans based on the server schedule so you can fire a Yara scan whenever you want from your server console to any connected client at any time you wish. Meanwhile, the client performs a keep-alive or ping-pong flow thus the server knows the client status.</p>
+
+<h3 id="server-characteristics">Server characteristics</h3>
+
+<p>The Server binds two ports, one for the comunication with the endpoints, which is a TCP connection. The other one is used for serving the administrative website. You can configure them but by default TCP port is 8080 and website port is 8000.</p>
+
+<p>The server handles everything from the website interface. The main characteristics are:</p>
+
+<ul>
+<li>Manage Endpoints
+
+<ul>
+<li>It is also possible to tag endpoints. The idea behind this is to perform analysis to a grup of assets.</li>
+</ul></li>
+<li>Manage Rules
+
+<ul>
+<li>It is also possible to tag rules. The idea behind this is to perform analysis using a grup of rules.</li>
+</ul></li>
+<li>Shedule scans
+
+<ul>
+<li>At this point you are not able to schedule scan programaticaly. It has to be done manually.</li>
+</ul></li>
+<li>Reporting</li>
+</ul>
+
+<h3 id="first-steps-with-yara-endpoint">First steps with Yara-Endpoint</h3>
+
+<p>The unique requirement for Yara-Endpoint is MongoDB on the server side. There is no need to run the server with administrative privileges as long as you do not use a privilege port (below 1024). A part from that nothing else is needed. Well&hellip; you should run the server before the clients.</p>
+
+
+<figure>
+    <a href="/img/yara-endpoint/server.png">
+        <img src="/img/yara-endpoint/server.png" width="480" height="240" />
+    </a>
+    
+    <figcaption>
+        <h4>Booting up the server</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>As we explained before the server binds to 0.0.0.0:8080 and localhost:8000. Once both processes are ready the server waits for clients.</p>
+
+<p>Right now most of the logs are in JSON format, we are working to log everything in JSON format.</p>
+
+<p>When running a client you will see something like this.</p>
+
+
+<figure>
+    <a href="/img/yara-endpoint/client.png">
+        <img src="/img/yara-endpoint/client.png" width="480" height="240" />
+    </a>
+    
+    <figcaption>
+        <h4>Booting up the client</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>What you can see here is a self-register process. The client checks whether itself is registered or not and it starts a registration process because there is not a configuration file. When the registration is done the client sends the Ping command to the server so the server response with a pong.</p>
+
+
+<figure>
+    <a href="/img/yara-endpoint/server-pong.png">
+        <img src="/img/yara-endpoint/server-pong.png" width="480" height="240" />
+    </a>
+    
+    <figcaption>
+        <h4>Server registers a client</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h3 id="your-time">Your time</h3>
+
+<p>Well after this short introduction to Yara-Endpoint is time to play with it. We, from Yara-Rules, encourage you to install Yara-Endpoint in a test environment and play around. If you find any bug or you miss some functionality, please open an issue in our <a href="https://github.com/Yara-Rules/yara-endpoint/">github</a>.</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://yararules.com/2017/07/06/radare2-module-for-yara/" title="Radare2 module for Yara">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  Coded with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2017 YaraRules Project.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+<script src="http://yararules.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    
+  </body>
+</html>
+
