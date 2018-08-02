@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on YaraRules Project</title>
-    <link>http://yararules.com/tags/</link>
+    <link>https://yara-rules.github.io/blog/tags/</link>
     <description>Recent content in Tags on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -11,195 +11,195 @@
     <copyright>(c) 2017 YaraRules Project.</copyright>
     <lastBuildDate>Mon, 17 Oct 2016 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="http://yararules.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yara-rules.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Analyzer</title>
-      <link>http://yararules.com/tags/analyzer/</link>
+      <link>https://yara-rules.github.io/blog/tags/analyzer/</link>
       <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/analyzer/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/analyzer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anti Malware</title>
-      <link>http://yararules.com/tags/anti-malware/</link>
+      <link>https://yara-rules.github.io/blog/tags/anti-malware/</link>
       <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/anti-malware/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/anti-malware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anti Virus</title>
-      <link>http://yararules.com/tags/anti-virus/</link>
+      <link>https://yara-rules.github.io/blog/tags/anti-virus/</link>
       <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/anti-virus/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/anti-virus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>http://yararules.com/tags/cloud/</link>
+      <link>https://yara-rules.github.io/blog/tags/cloud/</link>
       <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/cloud/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design</title>
-      <link>http://yararules.com/tags/design/</link>
+      <link>https://yara-rules.github.io/blog/tags/design/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/design/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Endpoint</title>
-      <link>http://yararules.com/tags/endpoint/</link>
+      <link>https://yara-rules.github.io/blog/tags/endpoint/</link>
       <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/endpoint/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/endpoint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>http://yararules.com/tags/github/</link>
+      <link>https://yara-rules.github.io/blog/tags/github/</link>
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/github/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>http://yararules.com/tags/go/</link>
+      <link>https://yara-rules.github.io/blog/tags/go/</link>
       <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/go/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hunting</title>
-      <link>http://yararules.com/tags/hunting/</link>
+      <link>https://yara-rules.github.io/blog/tags/hunting/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/hunting/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/hunting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Json</title>
-      <link>http://yararules.com/tags/json/</link>
+      <link>https://yara-rules.github.io/blog/tags/json/</link>
       <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/json/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Malware</title>
-      <link>http://yararules.com/tags/malware/</link>
+      <link>https://yara-rules.github.io/blog/tags/malware/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/malware/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/malware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New</title>
-      <link>http://yararules.com/tags/new/</link>
+      <link>https://yara-rules.github.io/blog/tags/new/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/new/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/new/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R2</title>
-      <link>http://yararules.com/tags/r2/</link>
+      <link>https://yara-rules.github.io/blog/tags/r2/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/r2/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/r2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radare2</title>
-      <link>http://yararules.com/tags/radare2/</link>
+      <link>https://yara-rules.github.io/blog/tags/radare2/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/radare2/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/radare2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rules</title>
-      <link>http://yararules.com/tags/rules/</link>
+      <link>https://yara-rules.github.io/blog/tags/rules/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/rules/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/rules/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistic</title>
-      <link>http://yararules.com/tags/statistic/</link>
+      <link>https://yara-rules.github.io/blog/tags/statistic/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/statistic/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/statistic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strings</title>
-      <link>http://yararules.com/tags/strings/</link>
+      <link>https://yara-rules.github.io/blog/tags/strings/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/strings/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Study</title>
-      <link>http://yararules.com/tags/study/</link>
+      <link>https://yara-rules.github.io/blog/tags/study/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/study/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/study/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>http://yararules.com/tags/web/</link>
+      <link>https://yara-rules.github.io/blog/tags/web/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/web/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yago</title>
-      <link>http://yararules.com/tags/yago/</link>
+      <link>https://yara-rules.github.io/blog/tags/yago/</link>
       <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/yago/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/yago/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yara</title>
-      <link>http://yararules.com/tags/yara/</link>
+      <link>https://yara-rules.github.io/blog/tags/yara/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>http://yararules.com/tags/yara/</guid>
+      <guid>https://yara-rules.github.io/blog/tags/yara/</guid>
       <description></description>
     </item>
     
