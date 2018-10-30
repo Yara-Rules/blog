@@ -81,7 +81,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<meta name="generator" content="Hugo 0.38" />
+<meta name="generator" content="Hugo 0.50" />
 
   
 <!--[if lt IE 9]>
@@ -127,15 +127,17 @@
 
 
   
-<a href="https://yara-rules.github.io/blog/project">Project</a>
+<a href="https://yara-rules.github.io/project">Project</a>
+
+<a href="https://analysis.yararules.com">YaraRules Analyzer</a>
 
 <a href="https://github.com/Yara-Rules/rules">YaraRules Repository</a>
 
-<a href="https://yara-rules.github.io/blog/post" title="Show list of blog posts">Blog</a>
+<a href="https://yara-rules.github.io/post" title="Show list of blog posts">Blog</a>
 
-<a href="https://yara-rules.github.io/blog/contribute">Contribute</a>
+<a href="https://yara-rules.github.io/contribute">Contribute</a>
 
-<a href="https://yara-rules.github.io/blog/contact">Contact</a>
+<a href="https://yara-rules.github.io/contact">Contact</a>
 
 
 </nav>
@@ -222,43 +224,22 @@
 
 <p>Let&rsquo;s see some images so you get a clear idea of everything.</p>
 
-<p>
-<figure>
-    <a href="/img/yara-endpoint/dashboard.png">
-        <img src="/img/yara-endpoint/dashboard.png" width="240" height="120" />
-    </a>
-    
-    <figcaption>
-        <h4>Dashboard</h4>
-        
-    </figcaption>
-    
+<p><figure><a href="/img/yara-endpoint/dashboard.png">
+    <img src="/img/yara-endpoint/dashboard.png" width="240" height="120"/> </a><figcaption>
+            <h4>Dashboard</h4>
+        </figcaption>
 </figure>
 
-
-<figure>
-    <a href="/img/yara-endpoint/rule_details.png">
-        <img src="/img/yara-endpoint/rule_details.png" width="240" height="120" />
-    </a>
-    
-    <figcaption>
-        <h4>Rule description</h4>
-        
-    </figcaption>
-    
+<figure><a href="/img/yara-endpoint/rule_details.png">
+    <img src="/img/yara-endpoint/rule_details.png" width="240" height="120"/> </a><figcaption>
+            <h4>Rule description</h4>
+        </figcaption>
 </figure>
 
-
-<figure>
-    <a href="/img/yara-endpoint/tasks.png">
-        <img src="/img/yara-endpoint/tasks.png" width="240" height="120" />
-    </a>
-    
-    <figcaption>
-        <h4>Task schedule</h4>
-        
-    </figcaption>
-    
+<figure><a href="/img/yara-endpoint/tasks.png">
+    <img src="/img/yara-endpoint/tasks.png" width="240" height="120"/> </a><figcaption>
+            <h4>Task schedule</h4>
+        </figcaption>
 </figure>
 </p>
 
@@ -303,17 +284,10 @@
 
 <p>The unique requirement for Yara-Endpoint is MongoDB on the server side. There is no need to run the server with administrative privileges as long as you do not use a privilege port (below 1024). A part from that nothing else is needed. Well&hellip; you should run the server before the clients.</p>
 
-
-<figure>
-    <a href="/img/yara-endpoint/server.png">
-        <img src="/img/yara-endpoint/server.png" width="480" height="240" />
-    </a>
-    
-    <figcaption>
-        <h4>Booting up the server</h4>
-        
-    </figcaption>
-    
+<figure><a href="/img/yara-endpoint/server.png">
+    <img src="/img/yara-endpoint/server.png" width="480" height="240"/> </a><figcaption>
+            <h4>Booting up the server</h4>
+        </figcaption>
 </figure>
 
 
@@ -323,33 +297,19 @@
 
 <p>When running a client you will see something like this.</p>
 
-
-<figure>
-    <a href="/img/yara-endpoint/client.png">
-        <img src="/img/yara-endpoint/client.png" width="480" height="240" />
-    </a>
-    
-    <figcaption>
-        <h4>Booting up the client</h4>
-        
-    </figcaption>
-    
+<figure><a href="/img/yara-endpoint/client.png">
+    <img src="/img/yara-endpoint/client.png" width="480" height="240"/> </a><figcaption>
+            <h4>Booting up the client</h4>
+        </figcaption>
 </figure>
 
 
 <p>What you can see here is a self-register process. The client checks whether itself is registered or not and it starts a registration process because there is not a configuration file. When the registration is done the client sends the Ping command to the server so the server response with a pong.</p>
 
-
-<figure>
-    <a href="/img/yara-endpoint/server-pong.png">
-        <img src="/img/yara-endpoint/server-pong.png" width="480" height="240" />
-    </a>
-    
-    <figcaption>
-        <h4>Server registers a client</h4>
-        
-    </figcaption>
-    
+<figure><a href="/img/yara-endpoint/server-pong.png">
+    <img src="/img/yara-endpoint/server-pong.png" width="480" height="240"/> </a><figcaption>
+            <h4>Server registers a client</h4>
+        </figcaption>
 </figure>
 
 
