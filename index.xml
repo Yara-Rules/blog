@@ -9,10 +9,20 @@
     <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
     <webMaster>yararules@gmail.com (YaraRules)</webMaster>
     <copyright>(c) 2017 YaraRules Project.</copyright>
-    <lastBuildDate>Fri, 23 Mar 2018 22:00:22 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 22:43:54 +0100</lastBuildDate>
     
 	<atom:link href="https://yara-rules.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>YaraRET</title>
+      <link>https://yara-rules.github.io/blog/2018/10/30/yararet/</link>
+      <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yara-rules.github.io/blog/2018/10/30/yararet/</guid>
+      <description>For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.
+YaraRET it’s based in Radare2 and Yara, and it provides 58 magic number&amp;rsquo;s rules for detecting 58 types of files. This tool relies on the idea of a first stage detecting files using its magic numbers and a second stage, selecting or discarding those detected files using Yara, IoCs or its entropy value.</description>
+    </item>
     
     <item>
       <title>Yara Endpoint</title>

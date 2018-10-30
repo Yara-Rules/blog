@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yara-rules.github.io/blog/2018/10/30/yararet/</loc>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yara-rules.github.io/blog/2018/03/23/yara-endpoint/</loc>
     <lastmod>2018-03-23T22:00:22+01:00</lastmod>
   </url>
@@ -94,6 +99,12 @@
   </url>
   
   <url>
+    <loc>https://yara-rules.github.io/blog/tags/forensics/</loc>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yara-rules.github.io/blog/tags/github/</loc>
     <lastmod>2015-04-27T00:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -101,7 +112,7 @@
   
   <url>
     <loc>https://yara-rules.github.io/blog/tags/go/</loc>
-    <lastmod>2018-03-23T22:00:22+01:00</lastmod>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -131,7 +142,7 @@
   
   <url>
     <loc>https://yara-rules.github.io/blog/post/</loc>
-    <lastmod>2018-03-23T22:00:22+01:00</lastmod>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -143,7 +154,7 @@
   
   <url>
     <loc>https://yara-rules.github.io/blog/tags/radare2/</loc>
-    <lastmod>2017-07-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,13 +207,13 @@
   
   <url>
     <loc>https://yara-rules.github.io/blog/tags/yara/</loc>
-    <lastmod>2017-07-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yara-rules.github.io/blog/</loc>
-    <lastmod>2018-03-23T22:00:22+01:00</lastmod>
+    <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   

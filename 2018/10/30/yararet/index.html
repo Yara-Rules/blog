@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Radare2  &middot; YaraRules Project</title>
+  <title>YaraRET  &middot; YaraRules Project</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -16,24 +16,50 @@
 
 
 
-<meta name="keywords" content="Yara, Rules, ">
+<meta name="keywords" content="yara, radare2, forensics, go, ">
 
 
 
 
-<meta property="og:title" content="Radare2  &middot; YaraRules Project ">
+<meta property="og:title" content="YaraRET  &middot; YaraRules Project ">
 <meta property="og:site_name" content="YaraRules Project"/>
-<meta property="og:url" content="https://yara-rules.github.io/blog/tags/radare2/" />
+<meta property="og:url" content="https://yara-rules.github.io/blog/2018/10/30/yararet/" />
 <meta property="og:locale" content="en-EN">
 
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-10-30T22:43:54&#43;01:00" />
+<meta property="og:article:modified_time" content="2018-10-30T22:43:54&#43;01:00" />
 
 
 
-<link href="https://yara-rules.github.io/blog/tags/radare2/index.xml" rel="alternate" type="application/rss+xml" title="Radare2" />
+  
+<meta property="og:article:tag" content="yara">
+  
+<meta property="og:article:tag" content="radare2">
+  
+<meta property="og:article:tag" content="forensics">
+  
+<meta property="og:article:tag" content="go">
+  
 
-<link rel="canonical" href="https://yara-rules.github.io/blog/tags/radare2/" />
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@yararules" />
+<meta name="twitter:creator" content="@yararules" />
+<meta name="twitter:title" content="YaraRET" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://yara-rules.github.io/blog/2018/10/30/yararet/" />
+<meta name="twitter:domain" content="https://yara-rules.github.io/blog/">
+  
+
+
+
+
+
+<link rel="canonical" href="https://yara-rules.github.io/blog/2018/10/30/yararet/" />
 
 <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -149,9 +175,6 @@
 
 
 
-<a id="contact-link-rss" class="contact_link" href="https://yara-rules.github.io/blog/tags/radare2/index.xml" type="application/rss+xml">
-  <span class="fa fa-rss-square"></span><span>rss</span></a>
-
 
 
 </div>
@@ -162,28 +185,108 @@
 </header>
 
 
-<article id="main-content" class="container main_content list">
-  <header class="container">
-    <h1>Radare2
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>YaraRET
 </h1>
 
-  </header>
-  <ul class="container content">
-    
-      <li><a href="https://yara-rules.github.io/blog/2018/10/30/yararet/">YaraRET
-</a>
+  <div class="metas">
+<time datetime="2018-10-30">30 Oct, 2018</time>
 
-</li>
 
-    
-      <li><a href="https://yara-rules.github.io/blog/2017/07/06/radare2-module-for-yara/">Radare2 module for Yara
-</a>
-
-</li>
-
-    
-  </ul>
   
+  &middot; Read in about 2 min
+  &middot; (321 Words)
+  <br>
+  
+<a class="label" href="https://yara-rules.github.io/tags/yara">yara</a>
+
+<a class="label" href="https://yara-rules.github.io/tags/radare2">radare2</a>
+
+<a class="label" href="https://yara-rules.github.io/tags/forensics">forensics</a>
+
+<a class="label" href="https://yara-rules.github.io/tags/go">go</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<p>For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.</p>
+
+<p>YaraRET it’s based in Radare2 and Yara, and  it provides 58 magic number&rsquo;s rules for detecting 58 types of files.
+This tool relies on the idea of a first stage detecting files using its magic numbers and a second stage, selecting or discarding those detected files using Yara, IoCs or its entropy value. After that, we can generate the hash, the ssdeep to check it over another files or upload the structure to VirusTotal.</p>
+
+<p>YaraRET can be used as a oneliner or in a shell mode.</p>
+
+<h2 id="oneliner">Oneliner</h2>
+
+<p>If you want to run a fast scan over a disk, you can execute YaraRET in oneliner mode.</p>
+
+<p>In this case, YaraRET runs the ruleset marked as yarafile and, if some rule has a match, YaraRET will look for magic numbers for detecting file structures around this match. If some result has been found, YaraRET will dump this file.</p>
+
+<pre><code>$  ./yaraRET yara myYaraRule rawdisk myRaw maxsize maxsizeValue 
+</code></pre>
+
+<p>In the following example, YaraRET has searched for files related to TRISIS malware and a pyc file has been found.</p>
+
+<p>Like with yara rules, YaraRET can parse a file with domains or IPs in it, for look for them in a raw disk.</p>
+
+<pre><code>$ ./yaraRET ioc ./myIOC.stix rawdisk myRaw maxsize maxsizeValue
+</code></pre>
+
+<h2 id="shell-mode">Shell Mode</h2>
+
+<p>For running a complex analysis, YaraRET adds a shell mode which allows selection of file structures based in Yara or IoC detection or its entropy. Also, provides a flexible way for footer assignment.</p>
+
+<pre><code>$ ./yaraRET rawdisk myRaw shell
+</code></pre>
+
+<h2 id="features">Features</h2>
+
+<p>YaraRET also includes the following features:</p>
+
+<ul>
+<li>Run Radare2 commands</li>
+<li>Ssdeep distance checking</li>
+<li>VirusTotal API integration</li>
+<li>Scripting</li>
+<li>YaraForensics ruleset</li>
+<li>Entropy</li>
+</ul>
+
+<p>You can find all the documentation about YaraRET in the following link: <a href="https://github.com/wolfvan/YaraRET/blob/master/docs/readTheDocs.md">https://github.com/wolfvan/YaraRET/blob/master/docs/readTheDocs.md</a></p>
+
+<p>An stable version of code could be found in our Github repository.</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://yara-rules.github.io/blog/2018/03/23/yara-endpoint/" title="Yara Endpoint">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  
+</footer>
 
 </article>
       <footer id="main-footer" class="container main_footer">
