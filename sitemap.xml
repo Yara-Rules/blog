@@ -3,216 +3,216 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2018/10/30/yararet/</loc>
+    <loc>https://yararules.com/2018/10/30/yararet/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2018/03/23/yara-endpoint/</loc>
+    <loc>https://yararules.com/2018/03/23/yara-endpoint/</loc>
     <lastmod>2018-03-23T22:00:22+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2017/07/06/radare2-module-for-yara/</loc>
+    <loc>https://yararules.com/2017/07/06/radare2-module-for-yara/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2017/04/06/yara-rules-strings-statistical-study/</loc>
+    <loc>https://yararules.com/2017/04/06/yara-rules-strings-statistical-study/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2017/03/27/yago-converting-yara-rules-into-json-files/</loc>
+    <loc>https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/</loc>
     <lastmod>2017-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2017/03/08/website-redesign/</loc>
+    <loc>https://yararules.com/2017/03/08/website-redesign/</loc>
     <lastmod>2017-03-08T09:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2016/10/17/yararules-analyzer/</loc>
+    <loc>https://yararules.com/2016/10/17/yararules-analyzer/</loc>
     <lastmod>2016-10-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2015/04/27/yararules-now-on-github/</loc>
+    <loc>https://yararules.com/2015/04/27/yararules-now-on-github/</loc>
     <lastmod>2015-04-27T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/2015/02/25/a-new-project-is-born/</loc>
+    <loc>https://yararules.com/2015/02/25/a-new-project-is-born/</loc>
     <lastmod>2015-02-25T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/contact/</loc>
+    <loc>https://yararules.com/contact/</loc>
     <lastmod>2015-02-25T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/contribute/</loc>
+    <loc>https://yararules.com/contribute/</loc>
     <lastmod>2015-02-25T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/project/</loc>
+    <loc>https://yararules.com/project/</loc>
     <lastmod>2015-02-25T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/analyzer/</loc>
+    <loc>https://yararules.com/tags/analyzer/</loc>
     <lastmod>2016-10-17T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/anti-malware/</loc>
+    <loc>https://yararules.com/tags/anti-malware/</loc>
     <lastmod>2018-03-23T22:00:22+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/anti-virus/</loc>
+    <loc>https://yararules.com/tags/anti-virus/</loc>
     <lastmod>2018-03-23T22:00:22+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/cloud/</loc>
+    <loc>https://yararules.com/tags/cloud/</loc>
     <lastmod>2016-10-17T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/design/</loc>
+    <loc>https://yararules.com/tags/design/</loc>
     <lastmod>2017-03-08T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/endpoint/</loc>
+    <loc>https://yararules.com/tags/endpoint/</loc>
     <lastmod>2018-03-23T22:00:22+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/forensics/</loc>
+    <loc>https://yararules.com/tags/forensics/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/github/</loc>
+    <loc>https://yararules.com/tags/github/</loc>
     <lastmod>2015-04-27T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/go/</loc>
+    <loc>https://yararules.com/tags/go/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/hunting/</loc>
+    <loc>https://yararules.com/tags/hunting/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/json/</loc>
+    <loc>https://yararules.com/tags/json/</loc>
     <lastmod>2017-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/malware/</loc>
+    <loc>https://yararules.com/tags/malware/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/new/</loc>
+    <loc>https://yararules.com/tags/new/</loc>
     <lastmod>2017-03-08T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/post/</loc>
+    <loc>https://yararules.com/post/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/r2/</loc>
+    <loc>https://yararules.com/tags/r2/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/radare2/</loc>
+    <loc>https://yararules.com/tags/radare2/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/rules/</loc>
+    <loc>https://yararules.com/tags/rules/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/statistic/</loc>
+    <loc>https://yararules.com/tags/statistic/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/strings/</loc>
+    <loc>https://yararules.com/tags/strings/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/study/</loc>
+    <loc>https://yararules.com/tags/study/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/</loc>
+    <loc>https://yararules.com/tags/</loc>
     <lastmod>2016-10-17T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/topics/</loc>
+    <loc>https://yararules.com/topics/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/web/</loc>
+    <loc>https://yararules.com/tags/web/</loc>
     <lastmod>2017-03-08T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/yago/</loc>
+    <loc>https://yararules.com/tags/yago/</loc>
     <lastmod>2017-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/tags/yara/</loc>
+    <loc>https://yararules.com/tags/yara/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yara-rules.github.io/blog/</loc>
+    <loc>https://yararules.com/</loc>
     <lastmod>2018-10-30T22:43:54+01:00</lastmod>
     <priority>0</priority>
   </url>

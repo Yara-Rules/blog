@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on YaraRules Project</title>
-    <link>https://yara-rules.github.io/blog/topics/</link>
+    <link>https://yararules.com/topics/</link>
     <description>Recent content in Topics on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -10,7 +10,7 @@
     <webMaster>yararules@gmail.com (YaraRules)</webMaster>
     <copyright>(c) 2017 YaraRules Project.</copyright>
     
-	<atom:link href="https://yara-rules.github.io/blog/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yararules.com/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

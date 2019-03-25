@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on YaraRules Project</title>
-    <link>https://yara-rules.github.io/blog/post/</link>
+    <link>https://yararules.com/post/</link>
     <description>Recent content in Posts on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -11,35 +11,35 @@
     <copyright>(c) 2017 YaraRules Project.</copyright>
     <lastBuildDate>Tue, 30 Oct 2018 22:43:54 +0100</lastBuildDate>
     
-	<atom:link href="https://yara-rules.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yararules.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>YaraRET</title>
-      <link>https://yara-rules.github.io/blog/2018/10/30/yararet/</link>
+      <link>https://yararules.com/2018/10/30/yararet/</link>
       <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2018/10/30/yararet/</guid>
+      <guid>https://yararules.com/2018/10/30/yararet/</guid>
       <description>For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.
 YaraRET it’s based in Radare2 and Yara, and it provides 58 magic number&amp;rsquo;s rules for detecting 58 types of files. This tool relies on the idea of a first stage detecting files using its magic numbers and a second stage, selecting or discarding those detected files using Yara, IoCs or its entropy value.</description>
     </item>
     
     <item>
       <title>Yara Endpoint</title>
-      <link>https://yara-rules.github.io/blog/2018/03/23/yara-endpoint/</link>
+      <link>https://yararules.com/2018/03/23/yara-endpoint/</link>
       <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2018/03/23/yara-endpoint/</guid>
+      <guid>https://yararules.com/2018/03/23/yara-endpoint/</guid>
       <description>It&amp;rsquo;s been long time without any updates here. Let&amp;rsquo;s publish some news. Yara-Rules project is proud to anounce another interesting tool for the comunity, it is Yara-Endpoint. It is a tool that has been designed for helping incident handlers during their daily job.
 As you may guess Yara-Endpoint is a tool that runs Yara remotely on endpoints. Well, that is a basic summarize for the whole project so let&amp;rsquo;s explain it a little bit.</description>
     </item>
     
     <item>
       <title>Radare2 module for Yara</title>
-      <link>https://yara-rules.github.io/blog/2017/07/06/radare2-module-for-yara/</link>
+      <link>https://yararules.com/2017/07/06/radare2-module-for-yara/</link>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2017/07/06/radare2-module-for-yara/</guid>
+      <guid>https://yararules.com/2017/07/06/radare2-module-for-yara/</guid>
       <description>From YaraRules Project we would like to introduce you a new Yara module that pretends to use information retrieved from radare2 (r2) to use with Yara.
 To use this module it is important to know basic concepts about r2 and Yara.
 You can find all the documentation about the installation of the module and use cases in the following link https://r2yara.readthedocs.io/en/latest/. The code is available in our Github repository https://github.com/Yara-Rules/r2yara</description>
@@ -47,20 +47,20 @@ You can find all the documentation about the installation of the module and use 
     
     <item>
       <title>Yara Rules Strings: Statistical study</title>
-      <link>https://yara-rules.github.io/blog/2017/04/06/yara-rules-strings-statistical-study/</link>
+      <link>https://yararules.com/2017/04/06/yara-rules-strings-statistical-study/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2017/04/06/yara-rules-strings-statistical-study/</guid>
+      <guid>https://yararules.com/2017/04/06/yara-rules-strings-statistical-study/</guid>
       <description>As all Yara users know, Yara rules are based on &amp;laquo;strings&amp;raquo;; which are basically descriptions of patterns-based malware families. We can find simple rules like the following, for example:
 rule LIGHTDART_APT1 { meta: author = &amp;quot;AlienVault Labs&amp;quot; info = &amp;quot;CommentCrew-threat-apt1&amp;quot; strings: $s1 = &amp;quot;ret.log&amp;quot; wide ascii $s2 = &amp;quot;Microsoft Internet Explorer 6.0&amp;quot; wide ascii $s3 = &amp;quot;szURL Fail&amp;quot; wide ascii $s4 = &amp;quot;szURL Successfully&amp;quot; wide ascii $s5 = &amp;quot;%s&amp;amp;sdate=%04ld-%02ld-%02ld&amp;quot; wide ascii condition: all of them }  On the other hand, there are also more complex rules that use wild-cards, regular expressions, special operators or any other features that can be used in Yara and can be consulted in the documentation.</description>
     </item>
     
     <item>
       <title>YaGo, converting Yara rules into JSON files</title>
-      <link>https://yara-rules.github.io/blog/2017/03/27/yago-converting-yara-rules-into-json-files/</link>
+      <link>https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/</link>
       <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2017/03/27/yago-converting-yara-rules-into-json-files/</guid>
+      <guid>https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/</guid>
       <description>Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&amp;rsquo;s it, simple.
 Yara has a great comunity that use it and use a lot of rules, but sometimes it is hard to manage all of them, it is difficult to get a bird&amp;rsquo;s eye view of your rule set so we thought coverting the rules in json format will help.
 YaGo can be used as a standalone application or you can embed it on your own application.</description>
@@ -68,10 +68,10 @@ YaGo can be used as a standalone application or you can embed it on your own app
     
     <item>
       <title>Website Redesign</title>
-      <link>https://yara-rules.github.io/blog/2017/03/08/website-redesign/</link>
+      <link>https://yararules.com/2017/03/08/website-redesign/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2017/03/08/website-redesign/</guid>
+      <guid>https://yararules.com/2017/03/08/website-redesign/</guid>
       <description>Hello Yara lovers!
 We have been very busy lately working on ways to improve the YaraRules project and the online YaraRules Analyzer.
 The first of the changes and improvements is the redesigned website that you are seeing right now. We have moved from WordPress to Hugo in an effort of simplifying the web and its management.
@@ -80,30 +80,30 @@ But that is not the only thing we are working on. We are working also on the Yar
     
     <item>
       <title>YaraRules Analyzer</title>
-      <link>https://yara-rules.github.io/blog/2016/10/17/yararules-analyzer/</link>
+      <link>https://yararules.com/2016/10/17/yararules-analyzer/</link>
       <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2016/10/17/yararules-analyzer/</guid>
+      <guid>https://yararules.com/2016/10/17/yararules-analyzer/</guid>
       <description>At YaraRules Project we want to offer to the Community a new online service: “YaraRules Analyzer”. It allows you to analyze your files on the cloud using the full YaraRules ruleset, so you do not need to install Yara in your local computer and you also make sure to analyze your files against the latest YaraRules ruleset.
 This service is still in an alpha stage, is available at https://analysis.yararules.com/ and once you have uploaded the file to analyze, you can choose either to use the full ruleset or the rules from particular categories.</description>
     </item>
     
     <item>
       <title>YaraRules now on GitHub</title>
-      <link>https://yara-rules.github.io/blog/2015/04/27/yararules-now-on-github/</link>
+      <link>https://yararules.com/2015/04/27/yararules-now-on-github/</link>
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2015/04/27/yararules-now-on-github/</guid>
+      <guid>https://yararules.com/2015/04/27/yararules-now-on-github/</guid>
       <description>If you’re interested in sharing your Yara rules with us and the Security Community, you can join our mailing list, send a message to our Twitter account @YaraRules, or submit a pull request on our Github Repository.
 We have divided our ruleset in five categories, each one of them represented by a file: AntiDebug, Crypto, Malicious Document, Packer and Malware. Also, the malware category is split in a per malware family basis.</description>
     </item>
     
     <item>
       <title>A new project is born</title>
-      <link>https://yara-rules.github.io/blog/2015/02/25/a-new-project-is-born/</link>
+      <link>https://yararules.com/2015/02/25/a-new-project-is-born/</link>
       <pubDate>Wed, 25 Feb 2015 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
-      <guid>https://yara-rules.github.io/blog/2015/02/25/a-new-project-is-born/</guid>
+      <guid>https://yararules.com/2015/02/25/a-new-project-is-born/</guid>
       <description>This project arises out of the need to have a repository to compile different Yara signatures, classified and most up to date as possible.
 Yara is a tool increasingly used, but knowledge is dispersed, so one of the main objectives of the Yara Rules project is to offer a Yara ruleset as complete as possible to provide a quick way to get and update existing rules.
 We hope it is useful for the Security Community and are looking forward for your feedback.</description>
