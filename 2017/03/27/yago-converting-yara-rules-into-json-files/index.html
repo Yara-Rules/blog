@@ -81,7 +81,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.63.2" />
 
   
 <!--[if lt IE 9]>
@@ -198,7 +198,7 @@
     &middot; by Jaume Martin (@Xumeiquer)
   
   &middot; Read in about 3 min
-  &middot; (563 Words)
+  &middot; (572 Words)
   <br>
   
 <a class="label" href="https://yararules.com/tags/yara">yara</a>
@@ -216,15 +216,13 @@
 </header>
 
   <div class="container content">
-  <p>Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&rsquo;s it, simple.</p>
-
+  <p><strong>NOTE</strong>
+Yago project is archived and no longer maintained.</p>
+<p>Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&rsquo;s it, simple.</p>
 <p>Yara has a great comunity that use it and use a lot of rules, but sometimes it is hard to manage all of them, it is difficult to get a bird&rsquo;s eye view of your rule set so we thought coverting the rules in json format will help.</p>
-
 <p>YaGo can be used as a standalone application or you can embed it on your own application. In adition, we haved licensed YaGo using Apache License v2 so you can use it as you want in your projects. In any way, we hope you to colaborate with us improving YaGo and Yara-Rules in general.</p>
-
 <p>Using YaGo is really simple, for example this is its command line options.</p>
-
-<pre><code class="language-md">./yago
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">./yago
   yago fileName &lt;fileName&gt; [ --validJSON ]
   yago dirName &lt;dirName&gt; [ --validJSON ]
   yago indexFile &lt;indexFile&gt; [ cwd &lt;path&gt; ] [ --validJSON ]
@@ -232,148 +230,133 @@
   yago inputFile &lt;inputFile&gt; outputFile &lt;outputFile&gt; [ --overwrite ] [ --validJSON ]
   yago -h | --help
   yago --version
-</code></pre>
+</code></pre></div><p>The easyest execution is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">y</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">g</span><span style="color:#960050;background-color:#1e0010">o</span> <span style="color:#960050;background-color:#1e0010">f</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">l</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">N</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">m</span><span style="color:#960050;background-color:#1e0010">e</span> <span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">E</span><span style="color:#960050;background-color:#1e0010">K</span><span style="color:#960050;background-color:#1e0010">_</span><span style="color:#960050;background-color:#1e0010">Z</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">u</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#960050;background-color:#1e0010">y</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">r</span>
 
-<p>The easyest execution is:</p>
-
-<pre><code class="language-json">yago fileName test/EK_Zeus.yar
-
-{&quot;file_name&quot;:&quot;EK_Zeus.yar&quot;,&quot;imports&quot;:null,&quot;rules&quot;:[{&quot;name&quot;:&quot;zeus_js&quot;,&quot;global&quot;:false,&quot;private&quot;:false,&quot;tags&quot;:[&quot;EK&quot;],&quot;meta&quot;:{&quot;author&quot;:&quot;Josh Berry&quot;,&quot;date&quot;:&quot;2016-06-26&quot;,&quot;description&quot;:&quot;Zeus Exploit Kit Detection&quot;,&quot;hash0&quot;:&quot;c87ac7a25168df49a64564afb04dc961&quot;,&quot;sample_filetype&quot;:&quot;js-html&quot;,&quot;yaragenerator&quot;:&quot;https://github.com/Xen0ph0n/YaraGenerator&quot;},&quot;strings&quot;:[{&quot;name&quot;:&quot;$string0&quot;,&quot;value&quot;:&quot;var jsmLastMenu &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string1&quot;,&quot;value&quot;:&quot;position:absolute; z-index:99' &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string2&quot;,&quot;value&quot;:&quot; -1)jsmSetDisplayStyle('popupmenu' &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string3&quot;,&quot;value&quot;:&quot; '\u003ctr\u003e\u003ctd\u003e\u003ca href&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string4&quot;,&quot;value&quot;:&quot;  jsmLastMenu &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string5&quot;,&quot;value&quot;:&quot;  var ids &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string6&quot;,&quot;value&quot;:&quot;this.target&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string7&quot;,&quot;value&quot;:&quot; jsmPrevMenu, 'none');&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string8&quot;,&quot;value&quot;:&quot;  if(jsmPrevMenu &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string9&quot;,&quot;value&quot;:&quot;)if(MenuData[i])&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string10&quot;,&quot;value&quot;:&quot; '\u003cdiv style&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string11&quot;,&quot;value&quot;:&quot;popupmenu&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string12&quot;,&quot;value&quot;:&quot;  jsmSetDisplayStyle('popupmenu' &quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string13&quot;,&quot;value&quot;:&quot;function jsmHideLastMenu()&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1},{&quot;name&quot;:&quot;$string14&quot;,&quot;value&quot;:&quot; MenuData.length; i&quot;,&quot;modifers&quot;:null,&quot;type&quot;:1}],&quot;condition&quot;:&quot;14 of them&quot;}]}
-</code></pre>
-
-<p>You can use <code>jq</code> to see the output much clear.</p>
-
-<pre><code class="language-json">yago fileName test/EK_Zeus.yar | jq .
+{<span style="color:#f92672">&#34;file_name&#34;</span>:<span style="color:#e6db74">&#34;EK_Zeus.yar&#34;</span>,<span style="color:#f92672">&#34;imports&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;rules&#34;</span>:[{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;zeus_js&#34;</span>,<span style="color:#f92672">&#34;global&#34;</span>:<span style="color:#66d9ef">false</span>,<span style="color:#f92672">&#34;private&#34;</span>:<span style="color:#66d9ef">false</span>,<span style="color:#f92672">&#34;tags&#34;</span>:[<span style="color:#e6db74">&#34;EK&#34;</span>],<span style="color:#f92672">&#34;meta&#34;</span>:{<span style="color:#f92672">&#34;author&#34;</span>:<span style="color:#e6db74">&#34;Josh Berry&#34;</span>,<span style="color:#f92672">&#34;date&#34;</span>:<span style="color:#e6db74">&#34;2016-06-26&#34;</span>,<span style="color:#f92672">&#34;description&#34;</span>:<span style="color:#e6db74">&#34;Zeus Exploit Kit Detection&#34;</span>,<span style="color:#f92672">&#34;hash0&#34;</span>:<span style="color:#e6db74">&#34;c87ac7a25168df49a64564afb04dc961&#34;</span>,<span style="color:#f92672">&#34;sample_filetype&#34;</span>:<span style="color:#e6db74">&#34;js-html&#34;</span>,<span style="color:#f92672">&#34;yaragenerator&#34;</span>:<span style="color:#e6db74">&#34;https://github.com/Xen0ph0n/YaraGenerator&#34;</span>},<span style="color:#f92672">&#34;strings&#34;</span>:[{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string0&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;var jsmLastMenu &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string1&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;position:absolute; z-index:99&#39; &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string2&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34; -1)jsmSetDisplayStyle(&#39;popupmenu&#39; &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string3&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34; &#39;\u003ctr\u003e\u003ctd\u003e\u003ca href&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string4&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;  jsmLastMenu &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string5&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;  var ids &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string6&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;this.target&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string7&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34; jsmPrevMenu, &#39;none&#39;);&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string8&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;  if(jsmPrevMenu &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string9&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;)if(MenuData[i])&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string10&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34; &#39;\u003cdiv style&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string11&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;popupmenu&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string12&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;  jsmSetDisplayStyle(&#39;popupmenu&#39; &#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string13&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34;function jsmHideLastMenu()&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>},{<span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;$string14&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#e6db74">&#34; MenuData.length; i&#34;</span>,<span style="color:#f92672">&#34;modifers&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;type&#34;</span>:<span style="color:#ae81ff">1</span>}],<span style="color:#f92672">&#34;condition&#34;</span>:<span style="color:#e6db74">&#34;14 of them&#34;</span>}]}
+</code></pre></div><p>You can use <code>jq</code> to see the output much clear.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">y</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">g</span><span style="color:#960050;background-color:#1e0010">o</span> <span style="color:#960050;background-color:#1e0010">f</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">l</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">N</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">m</span><span style="color:#960050;background-color:#1e0010">e</span> <span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">E</span><span style="color:#960050;background-color:#1e0010">K</span><span style="color:#960050;background-color:#1e0010">_</span><span style="color:#960050;background-color:#1e0010">Z</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">u</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#960050;background-color:#1e0010">y</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">r</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#960050;background-color:#1e0010">j</span><span style="color:#960050;background-color:#1e0010">q</span> <span style="color:#960050;background-color:#1e0010">.</span>
 {
-  &quot;file_name&quot;: &quot;EK_Zeus.yar&quot;,
-  &quot;imports&quot;: null,
-  &quot;rules&quot;: [
+  <span style="color:#f92672">&#34;file_name&#34;</span>: <span style="color:#e6db74">&#34;EK_Zeus.yar&#34;</span>,
+  <span style="color:#f92672">&#34;imports&#34;</span>: <span style="color:#66d9ef">null</span>,
+  <span style="color:#f92672">&#34;rules&#34;</span>: [
     {
-      &quot;name&quot;: &quot;zeus_js&quot;,
-      &quot;global&quot;: false,
-      &quot;private&quot;: false,
-      &quot;tags&quot;: [
-        &quot;EK&quot;
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;zeus_js&#34;</span>,
+      <span style="color:#f92672">&#34;global&#34;</span>: <span style="color:#66d9ef">false</span>,
+      <span style="color:#f92672">&#34;private&#34;</span>: <span style="color:#66d9ef">false</span>,
+      <span style="color:#f92672">&#34;tags&#34;</span>: [
+        <span style="color:#e6db74">&#34;EK&#34;</span>
       ],
-      &quot;meta&quot;: {
-        &quot;author&quot;: &quot;Josh Berry&quot;,
-        &quot;date&quot;: &quot;2016-06-26&quot;,
-        &quot;description&quot;: &quot;Zeus Exploit Kit Detection&quot;,
-        &quot;hash0&quot;: &quot;c87ac7a25168df49a64564afb04dc961&quot;,
-        &quot;sample_filetype&quot;: &quot;js-html&quot;,
-        &quot;yaragenerator&quot;: &quot;https://github.com/Xen0ph0n/YaraGenerator&quot;
+      <span style="color:#f92672">&#34;meta&#34;</span>: {
+        <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;Josh Berry&#34;</span>,
+        <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2016-06-26&#34;</span>,
+        <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Zeus Exploit Kit Detection&#34;</span>,
+        <span style="color:#f92672">&#34;hash0&#34;</span>: <span style="color:#e6db74">&#34;c87ac7a25168df49a64564afb04dc961&#34;</span>,
+        <span style="color:#f92672">&#34;sample_filetype&#34;</span>: <span style="color:#e6db74">&#34;js-html&#34;</span>,
+        <span style="color:#f92672">&#34;yaragenerator&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/Xen0ph0n/YaraGenerator&#34;</span>
       },
-      &quot;strings&quot;: [
+      <span style="color:#f92672">&#34;strings&#34;</span>: [
         {
-          &quot;name&quot;: &quot;$string0&quot;,
-          &quot;value&quot;: &quot;var jsmLastMenu &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string0&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;var jsmLastMenu &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string1&quot;,
-          &quot;value&quot;: &quot;position:absolute; z-index:99' &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string1&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;position:absolute; z-index:99&#39; &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string2&quot;,
-          &quot;value&quot;: &quot; -1)jsmSetDisplayStyle('popupmenu' &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string2&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34; -1)jsmSetDisplayStyle(&#39;popupmenu&#39; &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string3&quot;,
-          &quot;value&quot;: &quot; '&lt;tr&gt;&lt;td&gt;&lt;a href&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string3&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34; &#39;&lt;tr&gt;&lt;td&gt;&lt;a href&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string4&quot;,
-          &quot;value&quot;: &quot;  jsmLastMenu &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string4&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;  jsmLastMenu &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string5&quot;,
-          &quot;value&quot;: &quot;  var ids &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string5&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;  var ids &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string6&quot;,
-          &quot;value&quot;: &quot;this.target&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string6&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;this.target&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string7&quot;,
-          &quot;value&quot;: &quot; jsmPrevMenu, 'none');&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string7&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34; jsmPrevMenu, &#39;none&#39;);&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string8&quot;,
-          &quot;value&quot;: &quot;  if(jsmPrevMenu &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string8&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;  if(jsmPrevMenu &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string9&quot;,
-          &quot;value&quot;: &quot;)if(MenuData[i])&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string9&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;)if(MenuData[i])&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string10&quot;,
-          &quot;value&quot;: &quot; '&lt;div style&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string10&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34; &#39;&lt;div style&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string11&quot;,
-          &quot;value&quot;: &quot;popupmenu&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string11&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;popupmenu&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string12&quot;,
-          &quot;value&quot;: &quot;  jsmSetDisplayStyle('popupmenu' &quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string12&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;  jsmSetDisplayStyle(&#39;popupmenu&#39; &#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string13&quot;,
-          &quot;value&quot;: &quot;function jsmHideLastMenu()&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string13&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;function jsmHideLastMenu()&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         },
         {
-          &quot;name&quot;: &quot;$string14&quot;,
-          &quot;value&quot;: &quot; MenuData.length; i&quot;,
-          &quot;modifers&quot;: null,
-          &quot;type&quot;: 1
+          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;$string14&#34;</span>,
+          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34; MenuData.length; i&#34;</span>,
+          <span style="color:#f92672">&#34;modifers&#34;</span>: <span style="color:#66d9ef">null</span>,
+          <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#ae81ff">1</span>
         }
       ],
-      &quot;condition&quot;: &quot;14 of them&quot;
+      <span style="color:#f92672">&#34;condition&#34;</span>: <span style="color:#e6db74">&#34;14 of them&#34;</span>
     }
   ]
 }
-</code></pre>
-
-<p>You can use mongo or a ELK stack to store and organize your rules as well as manage your own rule set. By default YaGo prints out the rules in a way to be able to import them into mongo o logstash.</p>
-
+</code></pre></div><p>You can use mongo or a ELK stack to store and organize your rules as well as manage your own rule set. By default YaGo prints out the rules in a way to be able to import them into mongo o logstash.</p>
 <p>For example:</p>
-
 <pre><code>yago dirName rules_dir | mongoimport --db yararules --collection rules --type json
-</code></pre>
-
-<p>Or</p>
-
+</code></pre><p>Or</p>
 <pre><code>mongoexport --db yararules --collection rules --type json &gt; rules.json ; yago inputFile rules.json outputFile rules.yar
-</code></pre>
-
-<p>If you want to get more of YaGo go to <a href="https://github.com/Yara-Rules/yago">https://github.com/Yara-Rules/yago</a> and start playing with it. There is documentation in the repo as wll as a full list of examples.</p>
+</code></pre><p>If you want to get more of YaGo go to <a href="https://github.com/Yara-Rules/yago">https://github.com/Yara-Rules/yago</a> and start playing with it. There is documentation in the repo as wll as a full list of examples.</p>
 
 </div>
 
@@ -419,7 +402,7 @@
   
 <div class="container footline">
   
-  Coded with <i class='fa fa-heart'></i>
+  Coded with <!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 </div>
@@ -428,7 +411,7 @@
   
 <div class="container copyright">
   
-  &copy; 2017 YaraRules Project.
+  (c) 2017 YaraRules Project.
 
 
 </div>

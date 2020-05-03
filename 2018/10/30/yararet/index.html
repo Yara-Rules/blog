@@ -81,7 +81,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.63.2" />
 
   
 <!--[if lt IE 9]>
@@ -216,42 +216,22 @@
 </header>
 
   <div class="container content">
-  
-
-<p>For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.</p>
-
+  <p>For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.</p>
 <p>YaraRET it’s based in Radare2 and Yara, and  it provides 58 magic number&rsquo;s rules for detecting 58 types of files.
 This tool relies on the idea of a first stage detecting files using its magic numbers and a second stage, selecting or discarding those detected files using Yara, IoCs or its entropy value. After that, we can generate the hash, the ssdeep to check it over another files or upload the structure to VirusTotal.</p>
-
 <p>YaraRET can be used as a oneliner or in a shell mode.</p>
-
 <h2 id="oneliner">Oneliner</h2>
-
 <p>If you want to run a fast scan over a disk, you can execute YaraRET in oneliner mode.</p>
-
 <p>In this case, YaraRET runs the ruleset marked as yarafile and, if some rule has a match, YaraRET will look for magic numbers for detecting file structures around this match. If some result has been found, YaraRET will dump this file.</p>
-
 <pre><code>$  ./yaraRET yara myYaraRule rawdisk myRaw maxsize maxsizeValue 
-</code></pre>
-
-<p>In the following example, YaraRET has searched for files related to TRISIS malware and a pyc file has been found.</p>
-
+</code></pre><p>In the following example, YaraRET has searched for files related to TRISIS malware and a pyc file has been found.</p>
 <p>Like with yara rules, YaraRET can parse a file with domains or IPs in it, for look for them in a raw disk.</p>
-
 <pre><code>$ ./yaraRET ioc ./myIOC.stix rawdisk myRaw maxsize maxsizeValue
-</code></pre>
-
-<h2 id="shell-mode">Shell Mode</h2>
-
+</code></pre><h2 id="shell-mode">Shell Mode</h2>
 <p>For running a complex analysis, YaraRET adds a shell mode which allows selection of file structures based in Yara or IoC detection or its entropy. Also, provides a flexible way for footer assignment.</p>
-
 <pre><code>$ ./yaraRET rawdisk myRaw shell
-</code></pre>
-
-<h2 id="features">Features</h2>
-
+</code></pre><h2 id="features">Features</h2>
 <p>YaraRET also includes the following features:</p>
-
 <ul>
 <li>Run Radare2 commands</li>
 <li>Ssdeep distance checking</li>
@@ -260,9 +240,7 @@ This tool relies on the idea of a first stage detecting files using its magic nu
 <li>YaraForensics ruleset</li>
 <li>Entropy</li>
 </ul>
-
 <p>You can find all the documentation about YaraRET in the following link: <a href="https://github.com/wolfvan/YaraRET/blob/master/docs/readTheDocs.md">https://github.com/wolfvan/YaraRET/blob/master/docs/readTheDocs.md</a></p>
-
 <p>An stable version of code could be found in our Github repository.</p>
 
 </div>
@@ -305,7 +283,7 @@ This tool relies on the idea of a first stage detecting files using its magic nu
   
 <div class="container footline">
   
-  Coded with <i class='fa fa-heart'></i>
+  Coded with <!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 </div>
@@ -314,7 +292,7 @@ This tool relies on the idea of a first stage detecting files using its magic nu
   
 <div class="container copyright">
   
-  &copy; 2017 YaraRules Project.
+  (c) 2017 YaraRules Project.
 
 
 </div>

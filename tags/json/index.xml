@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Json on YaraRules Project</title>
+    <title>json on YaraRules Project</title>
     <link>https://yararules.com/tags/json/</link>
-    <description>Recent content in Json on YaraRules Project</description>
+    <description>Recent content in json on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
@@ -20,9 +20,9 @@
       <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
       <guid>https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/</guid>
-      <description>Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&amp;rsquo;s it, simple.
-Yara has a great comunity that use it and use a lot of rules, but sometimes it is hard to manage all of them, it is difficult to get a bird&amp;rsquo;s eye view of your rule set so we thought coverting the rules in json format will help.
-YaGo can be used as a standalone application or you can embed it on your own application.</description>
+      <description>NOTE Yago project is archived and no longer maintained.
+Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&amp;rsquo;s it, simple.
+Yara has a great comunity that use it and use a lot of rules, but sometimes it is hard to manage all of them, it is difficult to get a bird&amp;rsquo;s eye view of your rule set so we thought coverting the rules in json format will help.</description>
     </item>
     
   </channel>

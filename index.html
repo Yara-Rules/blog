@@ -55,7 +55,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.63.2" />
 
   
 <!--[if lt IE 9]>
@@ -175,7 +175,7 @@
   
     <article class="container content summary">
   <div class="container hat">
-  <h2><a href="https://yararules.com/2018/10/30/yararet/">YaraRET
+  <h2><a href="https://yararules.com/post/">Posts
 </a>
 </h2>
 
@@ -185,262 +185,12 @@
 
   <p class="container content">
   
-  
-    For this forensics cases which are based in unreliable evidences, we decided to carry out the development of a carving tool for getting files from a raw disk using IoC detection.
-YaraRET it’s based in Radare2 and Yara, and it provides 58 magic number&rsquo;s rules for detecting 58 types of files. This tool relies on the idea of a first stage detecting files using its magic numbers and a second stage, selecting or discarding those detected files using Yara, IoCs or its entropy value.
-  
-
 
 </p>
 
 
   <div class="container readlink">
-  <a href="https://yararules.com/2018/10/30/yararet/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2018/03/23/yara-endpoint/">Yara Endpoint
-</a>
-</h2>
-
-  <time datetime="2018-03-23">23 Mar, 2018</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    It&rsquo;s been long time without any updates here. Let&rsquo;s publish some news. Yara-Rules project is proud to anounce another interesting tool for the comunity, it is Yara-Endpoint. It is a tool that has been designed for helping incident handlers during their daily job.
-As you may guess Yara-Endpoint is a tool that runs Yara remotely on endpoints. Well, that is a basic summarize for the whole project so let&rsquo;s explain it a little bit.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2018/03/23/yara-endpoint/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2017/07/06/radare2-module-for-yara/">Radare2 module for Yara
-</a>
-</h2>
-
-  <time datetime="2017-07-06">6 Jul, 2017</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    From YaraRules Project we would like to introduce you a new Yara module that pretends to use information retrieved from radare2 (r2) to use with Yara.
-To use this module it is important to know basic concepts about r2 and Yara.
-You can find all the documentation about the installation of the module and use cases in the following link https://r2yara.readthedocs.io/en/latest/. The code is available in our Github repository https://github.com/Yara-Rules/r2yara
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2017/07/06/radare2-module-for-yara/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2017/04/06/yara-rules-strings-statistical-study/">Yara Rules Strings: Statistical study
-</a>
-</h2>
-
-  <time datetime="2017-04-06">6 Apr, 2017</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    As all Yara users know, Yara rules are based on &laquo;strings&raquo;; which are basically descriptions of patterns-based malware families. We can find simple rules like the following, for example:
-rule LIGHTDART_APT1 { meta: author = &quot;AlienVault Labs&quot; info = &quot;CommentCrew-threat-apt1&quot; strings: $s1 = &quot;ret.log&quot; wide ascii $s2 = &quot;Microsoft Internet Explorer 6.0&quot; wide ascii $s3 = &quot;szURL Fail&quot; wide ascii $s4 = &quot;szURL Successfully&quot; wide ascii $s5 = &quot;%s&amp;sdate=%04ld-%02ld-%02ld&quot; wide ascii condition: all of them }  On the other hand, there are also more complex rules that use wild-cards, regular expressions, special operators or any other features that can be used in Yara and can be consulted in the documentation.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2017/04/06/yara-rules-strings-statistical-study/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/">YaGo, converting Yara rules into JSON files
-</a>
-</h2>
-
-  <time datetime="2017-03-27">27 Mar, 2017</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    Yara-Rules project is proud to anounce YaGo. YaGo is a tool that converts Yara rules into JSON files, that&rsquo;s it, simple.
-Yara has a great comunity that use it and use a lot of rules, but sometimes it is hard to manage all of them, it is difficult to get a bird&rsquo;s eye view of your rule set so we thought coverting the rules in json format will help.
-YaGo can be used as a standalone application or you can embed it on your own application.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2017/03/27/yago-converting-yara-rules-into-json-files/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2017/03/08/website-redesign/">Website Redesign
-</a>
-</h2>
-
-  <time datetime="2017-03-08">8 Mar, 2017</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    Hello Yara lovers!
-We have been very busy lately working on ways to improve the YaraRules project and the online YaraRules Analyzer.
-The first of the changes and improvements is the redesigned website that you are seeing right now. We have moved from WordPress to Hugo in an effort of simplifying the web and its management.
-But that is not the only thing we are working on. We are working also on the YaraRules Analyzer and the YaraRules ruleset and have planned some improvements that you will enjoy for sure.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2017/03/08/website-redesign/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2016/10/17/yararules-analyzer/">YaraRules Analyzer
-</a>
-</h2>
-
-  <time datetime="2016-10-17">17 Oct, 2016</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    At YaraRules Project we want to offer to the Community a new online service: “YaraRules Analyzer”. It allows you to analyze your files on the cloud using the full YaraRules ruleset, so you do not need to install Yara in your local computer and you also make sure to analyze your files against the latest YaraRules ruleset.
-This service is still in an alpha stage, is available at https://analysis.yararules.com/ and once you have uploaded the file to analyze, you can choose either to use the full ruleset or the rules from particular categories.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2016/10/17/yararules-analyzer/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2015/04/27/yararules-now-on-github/">YaraRules now on GitHub
-</a>
-</h2>
-
-  <time datetime="2015-04-27">27 Apr, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    If you’re interested in sharing your Yara rules with us and the Security Community, you can join our mailing list, send a message to our Twitter account @YaraRules, or submit a pull request on our Github Repository.
-We have divided our ruleset in five categories, each one of them represented by a file: AntiDebug, Crypto, Malicious Document, Packer and Malware. Also, the malware category is split in a per malware family basis.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2015/04/27/yararules-now-on-github/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://yararules.com/2015/02/25/a-new-project-is-born/">A new project is born
-</a>
-</h2>
-
-  <time datetime="2015-02-25">25 Feb, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    This project arises out of the need to have a repository to compile different Yara signatures, classified and most up to date as possible.
-Yara is a tool increasingly used, but knowledge is dispersed, so one of the main objectives of the Yara Rules project is to offer a Yara ruleset as complete as possible to provide a quick way to get and update existing rules.
-We hope it is useful for the Security Community and are looking forward for your feedback.
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://yararules.com/2015/02/25/a-new-project-is-born/">Read more &rarr;</a>
+  <a href="https://yararules.com/post/">Read more &rarr;</a>
 
 </div>
 
@@ -466,7 +216,7 @@ We hope it is useful for the Security Community and are looking forward for your
   
 <div class="container footline">
   
-  Coded with <i class='fa fa-heart'></i>
+  Coded with <!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 </div>
@@ -475,7 +225,7 @@ We hope it is useful for the Security Community and are looking forward for your
   
 <div class="container copyright">
   
-  &copy; 2017 YaraRules Project.
+  (c) 2017 YaraRules Project.
 
 
 </div>

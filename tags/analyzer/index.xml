@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analyzer on YaraRules Project</title>
+    <title>analyzer on YaraRules Project</title>
     <link>https://yararules.com/tags/analyzer/</link>
-    <description>Recent content in Analyzer on YaraRules Project</description>
+    <description>Recent content in analyzer on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
@@ -20,8 +20,9 @@
       <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
       <guid>https://yararules.com/2016/10/17/yararules-analyzer/</guid>
-      <description>At YaraRules Project we want to offer to the Community a new online service: “YaraRules Analyzer”. It allows you to analyze your files on the cloud using the full YaraRules ruleset, so you do not need to install Yara in your local computer and you also make sure to analyze your files against the latest YaraRules ruleset.
-This service is still in an alpha stage, is available at https://analysis.yararules.com/ and once you have uploaded the file to analyze, you can choose either to use the full ruleset or the rules from particular categories.</description>
+      <description>NOTE YaraRules Analyzer project is no longer maintained.
+At YaraRules Project we want to offer to the Community a new online service: “YaraRules Analyzer”. It allows you to analyze your files on the cloud using the full YaraRules ruleset, so you do not need to install Yara in your local computer and you also make sure to analyze your files against the latest YaraRules ruleset.
+This service is still in an alpha stage, is available at https://analysis.</description>
     </item>
     
   </channel>

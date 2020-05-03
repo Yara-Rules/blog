@@ -71,7 +71,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.63.2" />
 
   
 <!--[if lt IE 9]>
@@ -183,17 +183,12 @@
 </header>
 
   <div class="container content">
-  <p>If you’re interested in sharing your Yara rules with us and the Security Community, you can <a href="http://list.yararules.com/mailman/listinfo/yararules.com.signatures" title="YaraRules Mailing List">join our mailing list</a>, <a href="https://twitter.com/yararules" title="YaraRules' Twitter Account">send a message to our Twitter account @YaraRules</a>, or <a href="https://github.com/Yara-Rules/rules/" title="YaraRules Github Repository">submit a pull request on our Github Repository</a>.</p>
-
+  <p>If you’re interested in sharing your Yara rules with us and the Security Community, you can <a href="https://t.me/joinchat/ALAD2UZ1HxA0M37D94oeag" title="YaraRules Feedback Telegram Group">join our Telegram group</a>, <a href="https://twitter.com/yararules" title="YaraRules' Twitter Account">send a message to our Twitter account @YaraRules</a>, or <a href="https://github.com/Yara-Rules/rules/" title="YaraRules Github Repository">submit a pull request on our Github Repository</a>.</p>
 <p>We have divided our ruleset in nine main categories, each one of them represented by a file: AntiDebug, CVE, Crypto, Exploit Kits, Malicious Document, Malware, Mobile Malware, Packer and Webshells. Most of the categories are split in a per family basis.</p>
-
 <p>We also have two auxiliary categories, email and utils, that have simple rules to work with emails and regular IoC (IP, domains, URL, &hellip;).</p>
-
 <p>We want all the new rules to follow some guidelines. First of all, we would like to have some common metadata fields to better identify every rule. Author, date, brief description, sources, references or sample hashes are some of the most interesting fields for us.</p>
-
 <p>Submitting rules with this template will make it easier for us to organize and sort all the rules you send:</p>
-
-<pre><code>rule rule_name : tag1 tag2 tag3
+<pre><code class="language-yara" data-lang="yara">rule rule_name : tag1 tag2 tag3
 {
     meta:
         author      = &quot;author's name and (if possible) link to profile&quot;
@@ -206,25 +201,16 @@
    condition:
         XXXX
 }
-</code></pre>
-
-<p>Also, we would like to establish a set of prefixes on the rule name to make them easily identifiable. A rule name should contain the following parts:</p>
-
+</code></pre><p>Also, we would like to establish a set of prefixes on the rule name to make them easily identifiable. A rule name should contain the following parts:</p>
 <p>The category name abbreviated in 2 letters: MW (Malware), AD (AntiDebug), CR (Crypto), MD (Malicious Document) or PA (Packer) for each one of the defined categories.
 A subcategory or MW family name.
-A unique name that fully identifies the rule.
-<Category (2 letters)><em><Subcategory/Family></em><unique name></p>
-
-<p>Besides this, adding tags to the rule can make it easier for other people to identify and keep track of rules.</p>
-
+A unique name that fully identifies the rule.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">Category</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">2</span> <span style="color:#a6e22e">letters</span><span style="color:#960050;background-color:#1e0010">)</span>&gt;_&lt;<span style="color:#f92672">Subcategory</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">Family</span>&gt;_&lt;<span style="color:#f92672">unique</span> <span style="color:#a6e22e">name</span>&gt;
+</code></pre></div><p>Besides this, adding tags to the rule can make it easier for other people to identify and keep track of rules.</p>
 <p>For a better management of the GitHub Pull Requests it would be great if you created different PR to add, modify or delete rules for a single category/family, instead of mixing modifications on different rules/families in a single PR. Also, giving reasons on why you want to modify or delete some rules will definitely help us introducing the changes to the ruleset.</p>
-
 <p>If you send us a new malware family, please send it on a new file so we can attach to the structure we mentioned before.</p>
-
 <p>Finally, we suggest you to have in mind <a href="https://gist.github.com/Neo23x0/e3d4e316d7441d9143c7" title="Yara Performance Guidelines">this series of guidelines</a> when creating your signature for getting the most out of them.</p>
-
 <p>Our Yara ruleset is under the <a href="http://www.gnu.org/licenses/gpl-2.0.html" title="GNU GPL License v2">GNU-GPLv2</a> license. It’s open to any user or organization, as long as you use it under this license.</p>
-
 <p>The <a href="https://twitter.com/yararules">YaraRules</a> team.</p>
 
 </div>
@@ -246,7 +232,7 @@ A unique name that fully identifies the rule.
   
 <div class="container footline">
   
-  Coded with <i class='fa fa-heart'></i>
+  Coded with <!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 </div>
@@ -255,7 +241,7 @@ A unique name that fully identifies the rule.
   
 <div class="container copyright">
   
-  &copy; 2017 YaraRules Project.
+  (c) 2017 YaraRules Project.
 
 
 </div>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on YaraRules Project</title>
+    <title>github on YaraRules Project</title>
     <link>https://yararules.com/tags/github/</link>
-    <description>Recent content in Github on YaraRules Project</description>
+    <description>Recent content in github on YaraRules Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
@@ -20,7 +20,7 @@
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0100</pubDate>
       <author>yararules@gmail.com (YaraRules)</author>
       <guid>https://yararules.com/2015/04/27/yararules-now-on-github/</guid>
-      <description>If you’re interested in sharing your Yara rules with us and the Security Community, you can join our mailing list, send a message to our Twitter account @YaraRules, or submit a pull request on our Github Repository.
+      <description>If you’re interested in sharing your Yara rules with us and the Security Community, you can join our Telegram Group, send a message to our Twitter account @YaraRules, or submit a pull request on our Github Repository.
 We have divided our ruleset in five categories, each one of them represented by a file: AntiDebug, Crypto, Malicious Document, Packer and Malware. Also, the malware category is split in a per malware family basis.</description>
     </item>
     
