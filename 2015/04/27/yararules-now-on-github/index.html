@@ -86,6 +86,8 @@
 
 <link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://yararules.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://yararules.com/css/solid.min.css">
+<link rel="stylesheet" href="https://yararules.com/css/brands.min.css">
 <link rel="stylesheet" href="https://yararules.com/css/style.css">
 <link rel="stylesheet" href="https://yararules.com/css/highlight/default.css">
 
@@ -118,13 +120,11 @@
   <nav class="container nav primary no-print">
   
 
-<a class="homelink" href="https://yararules.com/">Project</a>
+<a class="homelink" href="https://yararules.com/">Home</a>
 
 
   
 <a href="https://yararules.com/project">Project</a>
-
-<a href="https://analysis.yararules.com">YaraRules Analyzer</a>
 
 <a href="https://github.com/Yara-Rules/rules">YaraRules Repository</a>
 
@@ -140,12 +140,12 @@
 <div class="container nav secondary no-print">
   
 <a id="contact-link-email" class="contact_link" href="mailto:yararules@gmail.com">
-  <span class="fa fa-envelope-square"></span><span>email</span></a>
+  <span class="fas fa-envelope-square"></span><span>email</span></a>
 
 
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/Yara-Rules/rules">
-  <span class="fa fa-github-square"></span><span>github</span></a>
+  <span class="fab fa-github-square"></span><span>github</span></a>
 
 
 
@@ -158,7 +158,7 @@
 
 
 <a id="contact-link-twitter" class="contact_link" href="https://twitter.com/yararules">
-  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+  <span class="fab fa-twitter"></span><span>twitter</span></a>
 
 
 
@@ -167,6 +167,11 @@
 
 
 
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://t.me/yararules">
+  <span class="fab fa-telegram"></span><span>telegram</span></a>
 
 
 
@@ -193,7 +198,7 @@
     &middot; by Yara-Rules
   
   &middot; Read in about 2 min
-  &middot; (375 Words)
+  &middot; (377 Words)
   <br>
   
 <a class="label" href="https://yararules.com/tags/github">github</a>
@@ -207,10 +212,10 @@
 </header>
 
   <div class="container content">
-  <p>If you’re interested in sharing your Yara rules with us and the Security Community, you can <a href="https://t.me/joinchat/ALAD2UZ1HxA0M37D94oeag" title="YaraRules Telegram Group">join our Telegram Group</a>, <a href="https://twitter.com/yararules" title="YaraRules' Twitter Account">send a message to our Twitter account @YaraRules</a>, or <a href="https://github.com/Yara-Rules/rules/" title="YaraRules Github Repository">submit a pull request on our Github Repository</a>.</p>
+  <p>If you’re interested in sharing your Yara rules with us and the Security Community, you can <a href="https://t.me/yararules" title="YaraRules Telegram Group">join our Telegram Group</a>, <a href="https://twitter.com/yararules" title="YaraRules' Twitter Account">send a message to our Twitter account @YaraRules</a>, or <a href="https://github.com/Yara-Rules/rules/" title="YaraRules Github Repository">submit a pull request on our Github Repository</a>.</p>
 <p>We have divided our ruleset in five categories, each one of them represented by a file: AntiDebug, Crypto, Malicious Document, Packer and Malware. Also, the malware category is split in a per malware family basis.</p>
 <p>Also, we want all the new rules to follow some guidelines. First of all, submitting rules with this template will make it easier for us to organize and sort all the rules you send:</p>
-<pre><code>rule rule_name : tag1 tag2 tag3
+<pre><code class="language-yara" data-lang="yara">rule rule_name : tag1 tag2 tag3
 {
     meta:
         author      = &quot;author's name and (if possible) link to profile&quot;
@@ -226,9 +231,9 @@
 </code></pre><p>To continue, we would like to establish a set of prefixes on the rule name to make them easily identifiable. A rule name should contain the following parts:</p>
 <p>The category name abbreviated in 2 letters: MW (Malware), AD (AntiDebug), CR (Crypto), MD (Malicious Document) or PA (Packer) for each one of the defined categories.
 A subcategory or MW family name.
-A unique name that fully identifies the rule.
-&lt;Category (2 letters)&gt;_&lt;Subcategory/Family&gt;_<!-- raw HTML omitted --></p>
-<p>Besides this, adding tags to the rule can make it easier for other people to identify and keep track of rules.</p>
+A unique name that fully identifies the rule.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">&lt;Category (2 letters)&gt;_&lt;Subcategory/Family&gt;_&lt;unique name&gt;
+</code></pre></div><p>Besides this, adding tags to the rule can make it easier for other people to identify and keep track of rules.</p>
 <p>For a better management of the GitHub Pull Requests it would be great if you created different PR to add, modify or delete rules, instead of mixing additions, updates or deletions in a single PR. Also, giving reasons on why you want to modify or delete some rules will definitely help us introducing the changes to the ruleset.</p>
 <p>If you send us a new malware family, please send it on a new file so we can attach to the structure we mentioned before.</p>
 <p>Finally, we suggest you to have in mind <a href="https://gist.github.com/Neo23x0/e3d4e316d7441d9143c7" title="Yara Performance Guidelines">this series of guidelines</a> when creating your signature for getting the most out of them.</p>

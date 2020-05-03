@@ -9,9 +9,208 @@
     <managingEditor>yararules@gmail.com (YaraRules)</managingEditor>
     <webMaster>yararules@gmail.com (YaraRules)</webMaster>
     <copyright>(c) 2017 YaraRules Project.</copyright>
+    <lastBuildDate>Tue, 30 Oct 2018 22:43:54 +0100</lastBuildDate>
     
 	<atom:link href="https://yararules.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>forensics</title>
+      <link>https://yararules.com/tags/forensics/</link>
+      <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://yararules.com/tags/go/</link>
+      <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>radare2</title>
+      <link>https://yararules.com/tags/radare2/</link>
+      <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/radare2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yara</title>
+      <link>https://yararules.com/tags/yara/</link>
+      <pubDate>Tue, 30 Oct 2018 22:43:54 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/yara/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anti-malware</title>
+      <link>https://yararules.com/tags/anti-malware/</link>
+      <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/anti-malware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anti-virus</title>
+      <link>https://yararules.com/tags/anti-virus/</link>
+      <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/anti-virus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>endpoint</title>
+      <link>https://yararules.com/tags/endpoint/</link>
+      <pubDate>Fri, 23 Mar 2018 22:00:22 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/endpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hunting</title>
+      <link>https://yararules.com/tags/hunting/</link>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/hunting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>malware</title>
+      <link>https://yararules.com/tags/malware/</link>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/malware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r2</title>
+      <link>https://yararules.com/tags/r2/</link>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rules</title>
+      <link>https://yararules.com/tags/rules/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/rules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistic</title>
+      <link>https://yararules.com/tags/statistic/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/statistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strings</title>
+      <link>https://yararules.com/tags/strings/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/strings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>study</title>
+      <link>https://yararules.com/tags/study/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>https://yararules.com/tags/json/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yago</title>
+      <link>https://yararules.com/tags/yago/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/yago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>https://yararules.com/tags/design/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>new</title>
+      <link>https://yararules.com/tags/new/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://yararules.com/tags/web/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>analyzer</title>
+      <link>https://yararules.com/tags/analyzer/</link>
+      <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/analyzer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://yararules.com/tags/cloud/</link>
+      <pubDate>Mon, 17 Oct 2016 00:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://yararules.com/tags/github/</link>
+      <pubDate>Mon, 27 Apr 2015 00:00:00 +0100</pubDate>
+      <author>yararules@gmail.com (YaraRules)</author>
+      <guid>https://yararules.com/tags/github/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
