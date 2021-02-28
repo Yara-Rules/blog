@@ -1,0 +1,111 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en-EN lang=en-en><head><link href=https://gmpg.org/xfn/11 rel=profile><meta charset=utf-8><meta name=generator content="Hugo 0.81.0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Yara Rules Strings: Statistical study &#183; YaraRules Project</title><meta name=description content><link type=text/css rel=stylesheet href=https://yara-rules.github.io/blog/css/print.css media=print><link type=text/css rel=stylesheet href=https://yara-rules.github.io/blog/css/poole.css><link type=text/css rel=stylesheet href=https://yara-rules.github.io/blog/css/syntax.css><link type=text/css rel=stylesheet href=https://yara-rules.github.io/blog/css/hyde.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700"><link rel=apple-touch-icon-precomposed sizes=144x144 href=/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/favicon.png></head><body><aside class=sidebar><div class="container sidebar-sticky"><div class=sidebar-about><a href=https://yara-rules.github.io/blog/><h1>YaraRules Project</h1></a><p class=lead>Official Website</p></div><nav><ul class=sidebar-nav><li><a href=https://yara-rules.github.io/blog/>Home</a></li><li><a href=/blog/project>Project</a></li><li><a href=https://github.com/Yara-Rules/rules>Repository</a></li><li><a href=/blog/post>Posts</a></li><li><a href=/blog/contribute>Contribute</a></li><li><a href=/blog/contact>Contact</a></li></ul></nav><p>&copy; 2021. All rights reserved.</p></div></aside><main class="content container"><div class=post><h1>Yara Rules Strings: Statistical study</h1><time datetime=2017-04-06T00:00:00Z class=post-date>Thu, Apr 6, 2017</time><p>As all Yara users know, Yara rules are based on &ldquo;strings&rdquo;; which are basically descriptions of patterns-based malware families. We can find simple rules like the following, <a href=https://github.com/Yara-Rules/rules/blob/master/malware/APT_APT1.yar>for example</a>:</p><pre><code>rule LIGHTDART_APT1
+{
+    meta:
+        author = &quot;AlienVault Labs&quot;
+        info = &quot;CommentCrew-threat-apt1&quot;
+
+    strings:
+        $s1 = &quot;ret.log&quot; wide ascii
+        $s2 = &quot;Microsoft Internet Explorer 6.0&quot; wide ascii
+        $s3 = &quot;szURL Fail&quot; wide ascii
+        $s4 = &quot;szURL Successfully&quot; wide ascii
+        $s5 = &quot;%s&amp;sdate=%04ld-%02ld-%02ld&quot; wide ascii
+
+    condition:
+        all of them
+}
+</code></pre><p>On the other hand, there are also more complex rules that use wild-cards, regular expressions, special operators or any other features that can be used in Yara and can be consulted in the <a href=http://yara.readthedocs.io/en/v3.5.0/>documentation</a>.</p><p>Starting with our <a href=https://github.com/Yara-Rules/rules>Yara rules compilation</a> and with help of <a href=http://yara-rules.github.io/blog/2017/03/27/yago-converting-yara-rules-into-json-files/>YaGo</a>, I decided to carry out the experiment to study all the strings together collected from the compilation and we’d like to want to show the results. At the time of the experiment our repository had <em>11784</em> signatures with <em>15554</em> different strings.</p><h2 id=top-15-references-to-functions>Top 15 references to functions</h2><p>We realized a research for references to functions. We sorted the top 15 decrecently and we came up with the next:</p><pre><code>1.  GetProcAddress
+2.  Sleep
+3.  VirtualAlloc
+4.  WriteFile
+5.  VirtualProtect
+6.  ServiceMain
+7.  WriteProcessMemory
+8.  CreateThread
+9.  AdjustTokenPrivileges
+10. Getcommandline
+11. WSAStartup
+12. VirtualFree
+13. LoadLibraryA
+14. ExitProcess
+15. DllRegisterServer
+</code></pre><p>The result of our strings study looks very similar to this Binary Networks <a href=https://www.bnxnet.com/top-maliciously-used-apis/>study</a>, which it’s being used by pestudio on one of its reputation lists (specifically at functions.xml file).</p><h2 id=referenced-file-extensions>Referenced file extensions</h2><p>Among the strings of Yara analyzed so far we found that rules refer up to 16 different file extensions, where which stand out <em>.exe</em>, <em>.dll</em>, <em>.txt</em>, <em>.dat</em>, or <em>.pdb</em> as more significant in number of occurrences. A small chart below.</p><p><img src=/post/strings-analysis/1.png alt="Extension pie chart"></p><p>Analyzing in depth which <em>dll</em> and <em>exe</em> files are more time referenced in our strings, we reach the following conclusion (I show simply top 15 and from highest to lowest number of occurrences):</p><h3 id=top-15-referenced-dll-files>Top 15 referenced DLL files</h3><pre><code>1.  kernel32.dll
+2.  wsock32.dll
+3.  Ws2_32.dll
+4.  CI.dll
+5.  WININET.dll
+6.  user32.dll
+7.  urlmon.dll
+8.  advapi32.dll
+9.  svchostdllserver.dll
+10. imagehlp.dll
+11. HAL.dll
+12. dnsapi.dll
+13. Crypt32.dll
+14. BypassUacDLL.dll
+15. Advapi32.dll
+</code></pre><h3 id=top-15-referenced-exe-files>Top 15 Referenced EXE files</h3><pre><code>1.  cmd.exe
+2.  svchost.exe
+3.  rundll32.exe
+4.  Explorer.exe
+5.  wmiprvse.exe
+6.  ntoskrnl.exe
+7.  sysprep.exe
+8.  lsass.exe
+9.  mshtaex.exe
+10. xsiff.exe
+11. regsvr32.exe
+12. ISUN32.EXE
+13. net.exe
+14. Inetinfo.exe
+15. mimikatz.exe
+</code></pre><h2 id=common-folder-variables>Common folder variables</h2><p>Malware often uses a variable folder when it tries to access, change, or create files and folders on your PC so we have also included a study of the occurrences that referred to any of these variables and the result obtained is as follows:</p><p><img src=/post/strings-analysis/2.png alt="Common folder pie chart"></p><h3 id=user-agents>User-Agents</h3><p>To conclude, we have compiled a list of user-agent that are used in the strings, and we’ve got the following list:</p><pre><code>Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.0; .NET CLR 1.1.4322)
+Mozilla
+Mozilla/4.0
+Mozilla/4.0 (compatible; )
+Mozilla/4.0 (compatible; MSI 6.0;
+Mozilla/4.0 (compatible; MSIE 4.01; Windows NT)
+Mozilla/4.0 (compatible; MSIE 5.00; Windows 98) KSMM
+Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)
+Mozilla/4.0 (Compatible; MSIE 6.0;)
+Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SP Q%%d)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.; SV1)
+Mozilla/4.0 (compatible; MSIE 6.1; Windows NT 5.1; SV1)
+Mozilla/4.0 (compatible; MSIE 7.0;)
+Mozilla/4.0 ( compatible; MSIE 7.0; AOL 8.0 )
+Mozilla4.0 (compatible; MSIE 7.0; Win32)
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1)
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.503l3; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSOffice 12)
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; .NET CLR 1.1.4322
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; SV1)
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3
+Mozilla/4.0 (compatible; MSIE 8.0; Win32)
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT
+Mozilla/4.0 (compatible; MSIE8.0; Windows NT 5.1)
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727.42)
+Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0;)
+Mozilla/4.0 (compatible; MSIE %d.0;
+Mozilla/4.0 (compatible; Windows NT 5.1; MSIE 7.0)
+Mozilla/4.0 (compatible; Windows NT 5.1; MSIE 7.0; Trident/4.0)
+Mozilla/4.0 (compatible; Windows NT 5.1; MSIE 7.0; Trident/4.0; %s.%s)
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Mozilla/5.0 (Windows NT 6.2; WOW64; rv:20.0) Gecko/20100101 Firefox/
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0
+Mozilla/5.0 (Windows NT 6.; WOW64; rv:20.0) Gecko/20100101 Firefox/2
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.6)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.7.6)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-EN; rv:1.7.12) Gecko/200
+Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-EN; rv:1.7.12) Gecko/20100719 Firefox/1.0.7
+Mozilla/5.0 (Windows; Windows NT 5.1; en-US; rv:1.8.0.12) Firefox/1.5.0.12
+Mozilla5.1 (compatible; MSIE 8.0; Win32)
+Shockwave Flash
+SJZJ (compatible; MSIE 6.0; Win32)
+Netscape
+</code></pre><p>As conclusion to this strings study, we suggest that creating a Yara rule with all these strings will be very interesting. It will be worth to rate the analysis in a global way, because it would be good reputation IoC. On the other hand, whether Yara rule matches only some of these strings couldn&rsquo;t be enough to decide if it is a malware or not.</p><p>If you find it useful and you would like to have these lists updated we can do this analysis periodically or we could add a section in <a href=http://www.yara-rules.github.io/blog>www.yara-rules.github.io/blog</a> with the statistical data of the strings so that they will be updated in real time or periodically. We look forward to see your feedback.</p></div></main></body></html>
