@@ -1,0 +1,77 @@
+baseurl = "https://yara-rules.github.io/blog/"
+title = "YaraRules Project"
+copyright = "(c) 2017-2021 YaraRules Project."
+languageCode = "en-EN"
+metaDataFormat = "toml"
+theme = "hyde-y"
+
+# Pagination
+paginate = 10
+paginatePath = "page"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[author]
+    name = "YaraRules"
+    email = "yararules@gmail.com"
+
+[Menus]
+  main = [
+      {Weight = 1, Name = "Project", URL = "/project"},
+      {Weight = 2, Name = "Repository", URL = "https://github.com/Yara-Rules/rules"},
+      {Weight = 3, Name = "Posts", URL = "/post"},
+      {Weight = 4, Name = "Contribute", URL = "/contribute"},
+      {Weight = 5, Name = "Contact", URL = "/contact"}
+  ]
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # Site description
+    description = "Official Website"
+
+    # Site keywords
+    keywords = ["Yara", "Rules"]
+
+    # You can use markdown here.
+    brand = "YaraRules"
+    topline = "Yara Rules Repository"
+    footline = "Coded with <i class='fa fa-heart'></i>"
+
+    # Sidebar position
+    # false, true, "left", "right"
+    sidebar = "left"
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "Home"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "default"
+
+    # Google Analytics.
+    #googleAnalytics = "Your Google Analytics tracking code"
+
+    # Sidebar social links.
+    github = "Yara-Rules/rules" # Your Github profile ID
+    twitter = "yararules" # Your Twitter profile ID
+
+    # Sidebar RSS link: will only show up if there is a RSS feed
+    # associated with the current page
+    rss = true
+
+[blackfriday]
+    angledQuotes = true
+    fractions = false
+    hrefTargetBlank = false
+    latexDashes = true
+    plainIdAnchors = true
+    extensions = []
+    extensionmask = []
