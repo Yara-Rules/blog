@@ -1,4 +1,4 @@
-baseurl = "https://yara-rules.github.io/blog/"
+baseurl = "https://yara-rules.github.io/"
 title = "YaraRules Project"
 copyright = "(c) 2017-2021 YaraRules Project."
 languageCode = "en-EN"
